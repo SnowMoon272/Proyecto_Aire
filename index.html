@@ -5,65 +5,307 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/Styles.css">
+		<link href="./css/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Tablet.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="./css/Movile.css" media="screen and (max-width: 600px)">
     <title>Aire</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo__container">
-                <div class="header-logo">
-                    <a href="/">
-                        <img style=" height: 3.4rem " src="./assets/svg/pasted svg 4024x322.svg" alt="Logo-Aire">
-                    </a>
+
+	<header>
+		<div class="header__container">
+
+			<a class="header__container-logo" href="/">
+				<img 
+					src="./assets/svg/pasted svg 4024x322.svg" 
+					alt="Logo-Aire"
+				>
+			</a>
+
+			<div class="header__menu">
+				<a href="/">Inicio</a>
+				<a href="/">Cursos</a>
+				<a href="/">Equipo</a>
+				<a href="/">Acerca De</a>
+				<a href="/">Contacto</a>
+				<a href="https://www.facebook.com/aviacionintegral">
+					<img 
+						style=" height: 2rem " 
+						src="./assets/svg/pasted svg 88x882.svg" 
+						alt="Logo-Facebook"
+					>
+				</a>
+			</div>
+
+			<button class="header__burguer hamburger hamburger--spring" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<div class="header__menu-burger">
+				<ul>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="/">Cursos</a></li>
+					<li><a href="/">Equipo</a></li>
+					<li><a href="/">Acerca De</a></li>
+					<li><a href="/">Contacto</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</header>
+ 
+	<!-- <div class="hero__container">
+		<div class="hero__container__grey">
+
+			<section class="hero">
+
+				<a href="/" class="hero__logo">
+					<img 
+						style=" height: 13.4rem " 
+						src="./assets/svg/pasted svg 4024x322.svg" 
+						alt="Logo-Aire"
+					>
+				</a>
+
+				<h1>DEJA DE SOÑAR Y APRENDE A VOLAR</h1>
+				<p>ESCUELA DE AVACIÓN PARA PILOTO PRIVADO Y COMERCIAL</p>
+				<div class="hero__menu">
+
+					<a href="/" class="hero__menu-item">
+						<img 
+							style=" height: 3.4rem" 
+							src="./assets/svg/pasted svg 1545x1543.svg" 
+							alt="Cursos"
+						>
+						<h4>CURSOS</h4> 
+					</a>
+
+					<a href="/" class="hero__menu-item">
+						<img 
+							style=" height: 3.4rem" 
+							src="./assets/svg/pasted svg 98x983.svg" 
+							alt="Equipo"
+						>
+						<h4>EQUIPO</h4> 
+					</a>
+
+					<a href="/" class="hero__menu-item">
+						<img 
+							style=" height: 3.4rem" 
+							src="./assets/svg/pasted svg 1289x953.svg" 
+							alt="Acerca de"
+						>
+						<h4>ACERCA DE</h4>                    
+					</a>
+
+					<a href="/" class="hero__menu-item">
+						<img 
+							style=" height: 3.4rem" 
+							src="./assets/svg/pasted svg 788x873.svg" 
+							alt="Contacto"
+						>
+						<h4>CONTACTO</h4>                    
+					</a>
+
+				</div>
+
+			</section>
+
+			<div class="hero__gif">
+					<img 
+							style=" height: 4.6rem" 
+							src="./assets/gif/down_arrow.gif" 
+							alt="Down"
+					>
+			</div>
+
+		</div>
+	</div> -->
+<!--
+    <main class="main">
+
+        <section class="main__info1">
+
+            <div class="main__info-text">
+
+                <h2 class="main__Title-1">
+                    INSCRIPCIONES 
+                    <span class="main__Title-1 main__Title-2">
+                    ABIERTAS
+                    </span>
+                </h2>
+
+                <p class="main__text">
+                    Si quieres formar parte de la familia 
+                    <span class="main__text main__text-blue">
+                        AIRE
+                    </span>
+                    	y estudiar en una de las mejores escuelas de Aviación con la más grande 
+                    	<span class="main__text main__text-blue">
+                        "Pasión por la Aviación"
+                    </span> 
+                    comunicate a los telefonos:
+                </p>
+
+                <ul class="main__phones">
+                    <li>(55) 5308 4705</li>
+                    <li>(55) 5308 4706</li>
+                    <li>(55) 5308 4707</li>
+                </ul>
+
+                <p class="main__text">
+                    Interior de la república
+                </p>
+
+                <ul class="main__phones">
+                    <li>01 (800) 831 2075</li>
+                </ul>
+            </div>
+
+            <div class="main__info-image-container">
+                <img 
+                    style="width: 15rem;" 
+                    src="./assets/images/210.jpg" 
+                    alt="Mando"
+                >
+                <img 
+                    style="width: 15rem;" 
+                    src="./assets/images/172.jpg" 
+                    alt="Elice"
+                >
+            </div>
+
+        </section>
+
+        <section class="main__info2">
+
+            <div class="main__info2-left">
+                <p>VOLAMOS PARA LLEGAR A TI</p>
+            </div>
+
+            <div class="main__info2-rigth">
+
+                <img 
+                    style="width: 8rem;" 
+                    src="./assets/svg/pasted svg 279x198.svg" 
+                    alt="Equipo"
+                >
+
+                <div class="main__info2__button-container">
+                    <p class="main__text2">Contamos con los mejores aviónes y simuladores para un óptimo desempeño en tu formación como piloto.</p>
+                    <button class="main__info2-button">Conocelos</button>
                 </div>
+
             </div>
-            <div class="header__menu">
-                <a href="">Inicio</a>
-                <a href="">Cursos</a>
-                <a href="">Equipo</a>
-                <a href="">Acerca De</a>
-                <a href="">Contacto</a>
-                <a href="https://www.facebook.com/aviacionintegral"><img style=" height: 2rem " src="./assets/svg/pasted svg 88x882.svg" alt="Logo-Facebook"></a>
+
+        </section>
+
+        <section class="main__privYcomer">
+
+            <div class="main__priv">
+                PRIVADO
             </div>
-        </div>
-    </header>
-    <div class="hero__container">
-        <div class="hero__container__grey">
-            <section class="hero">
-                <a href="/" class="hero__logo">
-                    <img style=" height: 13.4rem " src="./assets/svg/pasted svg 4024x322.svg" alt="Logo-Aire">
-                </a>
-                <h1>DEJA DE SOÑAR Y APRENDE A VOLAR</h1>
-                <p>ESCUELA DE AVACIÓN PARA PILOTO PRIVADO Y COMERCIAL</p>
-                <div class="hero__menu">
-                    <a href="/" class="hero__menu-item">
-                        <img style=" height: 3.4rem" src="./assets/svg/pasted svg 1545x1543.svg" alt="Cursos">
-                        <h4>CURSOS</h4> 
-                    </a>
-                    <a href="/" class="hero__menu-item">
-                        <img style=" height: 3.4rem" src="./assets/svg/pasted svg 98x983.svg" alt="Equipo">
-                        <h4>EQUIPO</h4> 
-                    </a>
-                    <a href="/" class="hero__menu-item">
-                        <img style=" height: 3.4rem" src="./assets/svg/pasted svg 1289x953.svg" alt="Acerca de">
-                        <h4>ACERCA DE</h4>                    
-                    </a>
-                    <a href="/" class="hero__menu-item">
-                        <img style=" height: 3.4rem" src="./assets/svg/pasted svg 788x873.svg" alt="Contacto">
-                        <h4>CONTACTO</h4>                    
-                    </a>
-                </section>
-                <div>
-                    <img style=" height: 4.6rem" src="./assets/gif/down_arrow.gif" alt="Down">
-                </div>
+
+            <div class="main__comer">
+                COMERCIAL
             </div>
-        </div>
-    </div>
-        <main>
-            Hola Main
-        </main> 
-    <footer>
+
+        </section>
+    </main>
+		 -->
+    <!-- <footer>
         Hola Footer
     </footer>
+    <footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer><footer>
+        Hola Footer
+    </footer> -->
+
+
+
+<script src="./js/index.js"></script>
 </body>
 </html>
