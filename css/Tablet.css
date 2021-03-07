@@ -1,0 +1,41 @@
+
+/* -----------------------------------Header-------------------------------- */
+
+  @media (max-width: 740px) {
+
+    .header__container-logo {
+      margin-left: 1.5rem;
+    }
+  
+    .header__menu {
+      display: none;
+    }
+  
+    .header__container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-width: 320px;
+    }
+  
+    .header__burguer {
+      display: inline-block;
+    }
+
+    .header__menu-burgersOn {
+      background-color: #2d3e50;
+      position: absolute;
+      top: 3.4rem;
+      right: 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100vh;
+    }
+
+  }
+
+/* -------------------------------------Hero---------------------------------- */
+
+
