@@ -71,45 +71,27 @@ header {
   display: none;
 }
 
-.header__menu-burger ul {
-  padding: 0px;
-}
-
-.header__menu-burger li {
-  list-style: none;
-  position: relative;
-  top: -10rem;
-  margin: 3rem 0px;
-  padding: 0px;
-}
-
-.header__menu-burger a {
-  text-decoration: none;
-  color: rgb(245, 239, 239);
-
-}
 
 /* -------------------------------------Hero---------------------------------- */
 
 .hero__container {
-  border: 1px solid red;
   display: block;
   position: relative;
   text-align: center;
-  height: 750px;
-  width: 100vw;
-  min-width: 1048px;
+  height:94.6%;
+  width: 100%;
   background-image: url(http://www.escueladevueloaire.com/images/1.jpg);
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  z-index: 10;
+  background-size: 100% 100vh;
+  z-index: 15;
 }
 
 .hero__container__grey {
-  height: 100%;
   width: 100%;
-  z-index: 11;
+  height: 94.6%;
+  z-index: 20;
   background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
 }
 
 .hero {
@@ -120,16 +102,14 @@ header {
 }
 
 .hero__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  height: 13.4rem;
 }
 
 .hero h1 {
-  text-align: center;
   font-size: 2.5rem;
   color: aliceblue;
-  font-weight: 300;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 
@@ -163,96 +143,309 @@ header {
 /* -------------------------------------Main----------------------------------- */
 
 .main {
+  /* border: 3px solid red; */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.9rem;
-  height: 34rem;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  height: fit-content;
 }
 
 /* -------------------------------------Section 1----------------------------------- */
 .main__info1 {
+  /* border: 3px solid rgb(25, 0, 255); */
   display: flex;
-  justify-content: center;
-  height: 15rem;
+  width: 100%;
   max-width: 1024px;
+  height: fit-content;
 }
 
 .main__info-text {
+  /* border: 3px solid rgb(60, 255, 0); */
+  padding: 0.4rem 0.8rem 0.8rem 0rem;
+  width: 50%;
 }
 
-.main__Title-1 {
+.main__info-text h2 {
   font-size: 1.5rem;
-  margin: 0.4rem;
+  font-weight: 100;
+  margin: 0.4rem 0.4rem 0.4rem 0rem;
   color: rgb(49, 47, 47);
 }
 
-.main__Title-2 {
+.main__info-text h2 span {
   color: #3cabe2;
 }
 
 .main__text {
+  /* border: 3px solid rgb(251, 255, 0); */
+
   color: rgb(49, 47, 47);
-  margin: 0.4rem;
+  margin: 0.4rem 0.4rem 0.4rem 0rem;
 }
 
-.main__text-blue {
+.main__text span {
   color: #3cabe2;
 }
 
 .main__phones {
+  padding: 0.4rem 0.4rem 0.4rem 0rem;
+}
+
+.main__phones li {
+  list-style: none;
 }
 
 .main__info-image-container {
+  /* border: 3px solid rgb(204, 0, 255); */
+  box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
   display: flex;
+
 }
 /* -------------------------------------Section 2----------------------------------- */
 
 .main__info2 {
+  /* border: 3px solid rgb(25, 0, 255); */
+
   display: flex;
-  justify-content: center;
-  height: fit-content;
+  width: 100%;
   max-width: 1024px;
+  height: fit-content;
+
 }
 
 .main__info2-left {
-  margin-left: 0.4rem;
+  /* border: 3px solid rgb(60, 255, 0); */
+
+  margin: 0rem;
   height: 18rem;
-  width: 124rem;
+  width: 72.5%;
   background-image: url(http://www.escueladevueloaire.com/images/4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
+
+}
+
+.main__info2-left p {
+  /* border: 3px solid rgb(255, 0, 255); */
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+
+}
+
+.main__info2-left p span {
+  font-weight: 900;
 }
 
 .main__info2-rigth {
+  /* border: 3px solid rgb(60, 255, 0); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 27.5%;
+  height: 18rem;
+}
+.main__info2-rigthA{
+  /* border: 3px solid rgb(255, 0, 157); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+}
+
+.main__info2-rigth h2 {
+  /* border: 3px solid rgb(255, 196, 0); */
+  color: #2d71bc;
+  font-weight: 200;
 }
 
 .main__info2__button-container {
+  /* border: 3px solid rgb(255, 196, 0); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 }
 
-.main__text2 {
-  margin-left: 2rem;
+.main__info2__button-container p {
+  text-align: center;
+  margin-bottom: 1rem;
   color: #e3a711;
 }
 
 .main__info2-button {
+  border: 3px solid #a6a6a6;
   padding: 0.8rem 2.5rem;
+  color: #a6a6a6;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 3px;
+  box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
+  outline:none ;
+
 }
+
+.main__info2-button:hover {
+  cursor: pointer;
+  background-color: #2d71bc ;
+}
+
 /* -------------------------------------Section 3----------------------------------- */
-.main__privYcomer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
+
+.main__privYcomer-intro {
+  /* border: 3px solid rgb(25, 0, 255); */
   margin: 2rem;
+  text-align: center;
+  color: #a6a6a6;
+  font-weight: 200;
 }
+
+.h2B {
+  color: #f15a24;
+  font-weight: 200;
+}
+
+.main__privYcomer {
+  /* border: 3px solid rgb(25, 0, 255); */
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1024px;
+  height: fit-content;
+}
+
+/* -------------------------------------Section 3A----------------------------------- */
+
+.main__priv {
+  border-right: 3px solid #a6a6a6;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__priv-logo {
+  /* border: 3px solid rgb(38, 255, 0); */
+  text-align: center;
+}
+
+.main__priv-logo h3 {
+  color: #2d71bc;
+  
+}
+
+.main__priv p {
+  text-align: center;
+  padding: 1rem 4rem;
+  color: #3fb4eb;
+}
+
+/* -------------------------------------Section 3B----------------------------------- */
+
+.main__comer {
+  /* border: 3px solid rgb(255, 0, 119); */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__comer-logo {
+  /* border: 3px solid rgb(38, 255, 0); */
+  text-align: center;
+}
+
+.main__comer-logo h3 {
+  color: #2d71bc;
+}
+
+.main__comer p {
+  text-align: center;
+  padding: 1rem 4rem;
+  color: #3fb4eb;
+}
+
+/* -------------------------------------Slider---------------------------------- */
+
+  .slider__container {
+    /* border: 3px solid rgb(0, 17, 255); */
+
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    
+  }
+
+  .sliders {
+    /* border: 3px solid rgb(183, 0, 255); */
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .slider-shadow {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider__text {
+    /* border: 3px solid rgb(255, 0, 0); */
+
+    position: absolute;
+    top: 15%;
+  }
+
+  .slider__text {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 25px 17px rgba(0,0,0,0.25);
+    border-radius: 25px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .h2AA{
+    color: azure;
+  }
+  .h2BB{
+    color: #2d71bc;
+  }
+  .h2CC{
+    color: #f15a24;
+  }
+
+  .sliders img { 
+    /* border: 3px solid rgb(255, 0, 0); */
+    border-top: 3px solid #a6a6a6;
+    border-bottom: 3px solid #a6a6a6;
+    width: 100%;
+    height: 700px;
+
+  }
+
+
 /* -------------------------------------Footer---------------------------------- */
 
 footer {

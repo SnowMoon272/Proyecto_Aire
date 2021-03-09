@@ -1,41 +1,168 @@
 
 /* -----------------------------------Header-------------------------------- */
 
-  @media (max-width: 740px) {
+  @media (max-width: 780px) {
 
-    .header__container-logo {
-      margin-left: 1.5rem;
-    }
-  
-    .header__menu {
-      display: none;
-    }
-  
-    .header__container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      min-width: 320px;
-    }
-  
-    .header__burguer {
-      display: inline-block;
-    }
+  .header__container-logo {
+    margin-left: 1.5rem;
+  }
 
-    .header__menu-burgersOn {
-      background-color: #2d3e50;
-      position: absolute;
-      top: 3.4rem;
-      right: 0rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-      height: 100vh;
-    }
+  .header__menu {
+    display: none;
+  }
 
+  .header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 320px;
+  }
+
+  .header__burguer {
+    display: inline-block;
+  }
+
+  .header__menu-burgersOn {
+    background-color: #2d3e50;
+    animation-name: burger-menu;
+    animation-duration: 1s;
+    position: absolute;
+    top: 3.4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: -10;
+  }
+
+  @keyframes burger-menu {
+    0% {background-color: #ffffff; top: 0px;}
+    100% {background-color: #2d3e50;}
+  }
+
+  .hero__menu-item {
+    border: solid 1px rgb(255, 255, 255);
+    height: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+  }
+
+  .hero__menu-item h4 {
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-align: center;
   }
 
 /* -------------------------------------Hero---------------------------------- */
+
+  .hero__menu {
+    display: none;
+  }
+
+  .hero__container {
+    height: 430px;
+    background-size: 100% 100%;
+
+  }
+
+  .hero__logo {
+    height: 9.4rem;
+  }
+
+  .hero {
+margin-bottom: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin: 0px;
+
+  }
+
+/* -------------------------------------Main---------------------------------- */
+
+  .main__info1 {
+    flex-direction: column;
+  }
+
+  .main__info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .main__info-text h2 {
+    text-align: center;
+  }
+
+  .main__text {
+    text-align: center;
+  }
+
+  .main__info-image-container {
+    /* max-width: 320px; */
+  }
+
+/* -------------------------------------Section---------------------------------- */
+
+  .main__info2 {
+    flex-direction: column;
+  }
+
+  .main__info2-left {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .main__info2-left p {
+    /* border: 3px solid rgb(255, 0, 255); */
+    height: 100%;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+  }
+
+  .main__info2-rigth { 
+    width: 100%;
+  }
+
+  .main__info2-rigthA{
+    width: 50%;
+  }
+
+/* -------------------------------------Priv y Comer---------------------------------- */
+
+  .main__privYcomer {
+    position: relative;
+  }
+  .main__priv button {
+    position: absolute;
+    bottom: -50px;
+    padding: .8rem;
+  }
+  .main__priv p {
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+  }
+
+  .main__comer button {
+    position: absolute;
+    bottom: -50px;
+    padding: .8rem;
+  }
+
+  .main__comer p {
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+  }
+
+}
+
 
 
