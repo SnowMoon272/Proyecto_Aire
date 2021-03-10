@@ -18,28 +18,30 @@ hamburger.addEventListener("click", function() {
 
 /* ------------------------------------Slider-------------------------------- */
 
-window.addEventListener('load', function () {
 
+window.addEventListener('load', function () {
   let images = [];
   let indiceDeImagenes = 0;
-  let time = 3000;
+  let time = 2700;
 
-  images[0] = "./assets/images/2.jpg";
-  images[1] = "./assets/images/3.jpg";
-  images[2] = "./assets/images/5.jpg";
-  images[3] = "./assets/images/6.jpg";
+  {
+  images[0] = "./assets/images/12.jpg";
+  images[1] = "./assets/images/22.jpg";
+  images[2] = "./assets/images/3.jpg";
+  images[3] = "./assets/images/42.jpg";
   images[4] = "./assets/images/7.jpg";
-  images[5] = "./assets/images/8.jpg";
-  images[6] = "./assets/images/9.jpg";
-  images[7] = "./assets/images/10.jpg";
-  images[8] = "./assets/images/11.jpg";
-  images[9] = "./assets/images/12.jpg";
-  images[10] = "./assets/images/13.jpg";
-  images[11] = "./assets/images/14.jpg";
-  images[12] = "./assets/images/15.jpg";
-  images[13] = "./assets/images/16.jpg";
-  images[14] = "./assets/images/17.jpg";
-  images[15] = "./assets/images/22.jpg";
+  images[5] = "./assets/images/6.jpg";
+  images[6] = "./assets/images/8.jpg";
+  images[7] = "./assets/images/9.jpg";
+  images[8] = "./assets/images/10.jpg";
+  images[9] = "./assets/images/11.jpg";
+  images[10] = "./assets/images/122.jpg";
+  images[11] = "./assets/images/13.jpg";
+  images[12] = "./assets/images/14.jpg";
+  images[13] = "./assets/images/15.jpg";
+  images[14] = "./assets/images/162.jpg";
+  images[15] = "./assets/images/17.jpg";
+  }
 
   function changeImages() {
     document.slider.src = images[indiceDeImagenes];
@@ -51,11 +53,40 @@ window.addEventListener('load', function () {
     }
   }
   
-  let inter = setInterval(() => {
+    
+  setInterval(() => {
     changeImages();
   }, time);
+  
+  let miniImages = document.getElementsByClassName("mini")
 
-  document.getElementById('Leer').addEventListener("click",function () {
-    indiceDeImagenes = 15;
-  })
+  for (let i = 0; i < miniImages.length; i++) {
+    miniImages[i].addEventListener("click",() => {
+      indiceDeImagenes = miniImages[i].alt;
+    });
+  }
+
+  {
+  // let miniImages = document.getElementsByClassName("mini")
+
+  // for (let i = 0; i < miniImages.length; i++) {
+  //   let timer = setTimeout(function changeImages() {
+  //     document.slider.src = images[indiceDeImagenes];
+  //     console.log(i)
+  
+  //     if (indiceDeImagenes < 15) {
+  //       indiceDeImagenes++;
+  //     } else {
+  //       indiceDeImagenes = 0;
+  //     }
+  //   }, time );
+  // }
+    // for (let i = 0; i < miniImages.length; i++) {
+    //   miniImages[i].addEventListener("click",() => {
+    //     indiceDeImagenes = miniImages[i].alt;
+    //   });
+    // }
+  }
 });
+
+
