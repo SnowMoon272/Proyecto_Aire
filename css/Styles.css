@@ -1,5 +1,5 @@
 /* 
-1. Posicionamiento --------------------------> static, absolute, relative, fixed
+1. Posicionamiento y dimensiones-------------> static, absolute, relative, fixed
 2. Modelo de caja (Box model) ---------------> margin, border, padding, content
 3. Tipografía -------------------------------> tipos, tamaños de fuente, etc
 4. Estilos visuales -------------------------> box-shadow, border-radius, gradient, etc
@@ -27,25 +27,25 @@ body {
 header {
   position: fixed;
   z-index: 1;
-  display: flex;
   width: 100%;
   height: fit-content;
+  display: flex;
   background-color: rgb(240, 246, 246);
   box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
 }
 
 .header__container {
-  display: flex;
-  justify-content: space-between;
   width: 1024px;
   min-width: 740px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
 .header__container-logo {
-  display: flex;
   height: 3.4rem;
   width: 4.4rem;
+  display: flex;
   margin-left: 3rem;
 }
 
@@ -55,9 +55,9 @@ header {
 }
 
 .header__menu a {
-  margin: 0 1.4rem;
   font-weight: 100;
   font-size: 0.9rem;
+  margin: 0 1.4rem;
   color: #3980c3;
   text-decoration: none;
 }
@@ -72,19 +72,18 @@ header {
   display: none;
 }
 
-
 /* -------------------------------------Hero---------------------------------- */
 
 .hero__container {
-  display: block;
   position: relative;
-  text-align: center;
+  z-index: 15;
   height:94.6%;
   width: 100%;
+  display: block;
+  text-align: center;
   background-image: url(http://www.escueladevueloaire.com/images/1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-  z-index: 15;
 }
 
 .hero__container__grey {
@@ -96,15 +95,15 @@ header {
 }
 
 .hero {
-  display: inline-block;
   position: relative;
   top: 3rem;
+  display: inline-block;
   margin-bottom: 6rem;
 }
 
 .hero__logo {
-  display: inline-block;
   height: 13.4rem;
+  display: inline-block;
 }
 
 .hero h1 {
@@ -115,22 +114,22 @@ header {
 }
 
 .hero p {
+  margin: 0px 0px 2rem 0;
   text-align: center;
   color: aliceblue;
   font-size: 1.2rem;
-  margin: 0px 0px 2rem 0;
 }
 
 .hero__menu {
+  width: 100%;
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 100%;
 }
 
 .hero__menu-item {
-  display: block;
   width: 100%;
+  display: block;
   text-decoration: none;
   color: aliceblue;
 }
@@ -144,20 +143,18 @@ header {
 /* -------------------------------------Main----------------------------------- */
 
 .main {
-  /* border: 3px solid red; */
   position: relative;
+  width: 100%;
+  margin-top: 10px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  width: 100%;
-  height: fit-content;
 }
 
 /* -------------------------------------Section 1----------------------------------- */
 .main__info1 {
-  /* border: 3px solid rgb(25, 0, 255); */
   display: flex;
   width: 100%;
   max-width: 1024px;
@@ -165,9 +162,8 @@ header {
 }
 
 .main__info-text {
-  /* border: 3px solid rgb(60, 255, 0); */
-  padding: 0.4rem 0.8rem 0.8rem 0rem;
   width: 50%;
+  padding: 0.4rem 0.8rem 0.8rem 0rem;
 }
 
 .main__info-text h2 {
@@ -182,10 +178,8 @@ header {
 }
 
 .main__text {
-  /* border: 3px solid rgb(251, 255, 0); */
-
-  color: rgb(49, 47, 47);
   margin: 0.4rem 0.4rem 0.4rem 0rem;
+  color: rgb(49, 47, 47);
 }
 
 .main__text span {
@@ -201,48 +195,37 @@ header {
 }
 
 .main__info-image-container {
-  /* border: 3px solid rgb(204, 0, 255); */
-  box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
   display: flex;
-
+  box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
 }
 /* -------------------------------------Section 2----------------------------------- */
 
 .main__info2 {
-  /* border: 3px solid rgb(25, 0, 255); */
-
-  display: flex;
   width: 100%;
   max-width: 1024px;
   height: fit-content;
-
+  display: flex;
 }
 
 .main__info2-left {
-  /* border: 3px solid rgb(60, 255, 0); */
-
-  margin: 0rem;
-  height: 18rem;
   width: 72.5%;
+  height: 18rem;
+  margin: 0rem;
   background-image: url(http://www.escueladevueloaire.com/images/4.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
-
 }
 
 .main__info2-left p {
-  /* border: 3px solid rgb(255, 0, 255); */
-
+  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 100%;
   padding: 1rem;
   font-size: 2rem;
-  color: rgb(255, 255, 255);
   font-weight: 100;
-
+  color: rgb(255, 255, 255);
 }
 
 .main__info2-left p span {
@@ -250,16 +233,14 @@ header {
 }
 
 .main__info2-rigth {
-  /* border: 3px solid rgb(60, 255, 0); */
+  width: 27.5%;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 27.5%;
-  height: 18rem;
 }
 .main__info2-rigthA{
-  /* border: 3px solid rgb(255, 0, 157); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,13 +248,11 @@ header {
 }
 
 .main__info2-rigth h2 {
-  /* border: 3px solid rgb(255, 196, 0); */
-  color: #2d71bc;
   font-weight: 200;
+  color: #2d71bc;
 }
 
 .main__info2__button-container {
-  /* border: 3px solid rgb(255, 196, 0); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,72 +261,66 @@ header {
 }
 
 .main__info2__button-container p {
-  text-align: center;
   margin-bottom: 1rem;
+  text-align: center;
   color: #e3a711;
 }
 
 .main__info2-button {
   border: 3px solid #a6a6a6;
+  border-radius: 3px;
   padding: 0.8rem 2.5rem;
-  color: #a6a6a6;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 3px;
   box-shadow: 0px 6px 14px 4px rgba(15, 15, 15, 0.24);
   outline:none ;
-
+  color: #a6a6a6;
 }
 
 .main__info2-button:hover {
-  cursor: pointer;
   background-color: #2d71bc ;
+  cursor: pointer;
 }
 
 /* -------------------------------------Section 3----------------------------------- */
 
 .main__privYcomer-intro {
-  /* border: 3px solid rgb(25, 0, 255); */
   margin: 2rem;
   text-align: center;
-  color: #a6a6a6;
   font-weight: 200;
+  color: #a6a6a6;
 }
 
 .h2B {
-  color: #f15a24;
   font-weight: 200;
+  color: #f15a24;
 }
 
 .main__privYcomer {
-  /* border: 3px solid rgb(25, 0, 255); */
-
-  display: flex;
-  justify-content: space-around;
   width: 100%;
   max-width: 1024px;
   height: fit-content;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* -------------------------------------Section 3A----------------------------------- */
 
 .main__priv {
-  border-right: 3px solid #a6a6a6;
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-right: 3px solid #a6a6a6;
 }
 
 .main__priv-logo {
-  /* border: 3px solid rgb(38, 255, 0); */
   text-align: center;
 }
 
 .main__priv-logo h3 {
   color: #2d71bc;
-  
 }
 
 .main__priv p {
@@ -359,7 +332,6 @@ header {
 /* -------------------------------------Section 3B----------------------------------- */
 
 .main__comer {
-  /* border: 3px solid rgb(255, 0, 119); */
   width: 50%;
   height: 100%;
   display: flex;
@@ -368,7 +340,6 @@ header {
 }
 
 .main__comer-logo {
-  /* border: 3px solid rgb(38, 255, 0); */
   text-align: center;
 }
 
@@ -385,38 +356,32 @@ header {
 /* -------------------------------------Slider---------------------------------- */
 
 .slider__container {
-  /* border: 3px solid rgb(0, 17, 255); */
-
   width: 100%;
-  height: 825px;
+  height: 915px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
   margin-bottom: 50px;
-  
 }
 
 .sliders {
-  /* border: 3px solid rgb(183, 0, 255); */
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 805px;
   display: flex;
   justify-content: center;
-
 }
 
 .slider__text {
-  /* border: 3px solid rgb(255, 0, 0); */
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 25px 17px rgba(0,0,0,0.25);
-  border-radius: 25px;
   top: 15%;
-  font-size: 1.6rem;
   text-align: center;
+  font-size: 1.6rem;
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px 17px rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .h2AA{
   color: azure;
@@ -429,22 +394,19 @@ header {
 }
 
 .sliders img { 
-  /* border: 3px solid rgb(255, 0, 0); */
+  width: 100%;
+  height: 805px;
   border-top: 3px solid #a6a6a6;
   border-bottom: 3px solid #a6a6a6;
-  width: 100%;
-  height: 700px;
 }
 
 .mini-image {
-  /* border-bottom: 3px solid #a6a6a6; */
+  width: 50%;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  
-  width: 50%;
-  height: 60px;
 }
 
 .mini-image img {
@@ -460,82 +422,65 @@ header {
 /* -------------------------------------Footer---------------------------------- */
 
 footer {
-  /* border: 3px solid #ff0000; */
-  
+  width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 300px;
   background-color: #2d3e50;
 }
 
 .footer__container {
-  /* border: 3px solid #ffd000; */
-
-  display: flex;
   width: 1024px;
   height: 100%;
-
+  display: flex;
 }
 
 /* -------------------------------------Footer_A---------------------------------- */
 
 .footer__left {
-  /* border: 3px solid #33ff00; */
   width: 50%;
 }
 
 .footer__menu{
-  /* border: 3px solid #00ffff; */
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
 }
 
 .a1 { 
-  /* border: 3px solid #003cff; */
   font-size: 0.9rem;
   font-weight: 400;
-  color: #e7ebf0;
   text-decoration: none;
+  color: #e7ebf0;
 }
 
 .footer__pasion {
-  /* border: 3px solid #00ffff; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer__pasion-p {
-  /* border: 3px solid #003cff; */
   font-size: 1.8rem;
-  color: #e7ebf0;
   font-family: 'Monoton', cursive;
+  color: #e7ebf0;
 
 }
 
 .footer__pasion img {
-  /* border: 3px solid #003cff; */
-
   width: 40px;
 }
 
 .footer__left-p {
-  /* border: 3px solid #00ffff; */
-
-  margin-top: 14%;
   font-size: 0.7rem;
+  margin-top: 14%;
   color: #e7ebf0;
 }
 /* -------------------------------------Footer_B---------------------------------- */
 
 .footer__rigth {
-  /* border: 3px solid #33ff00; */
-
   position: relative;
-
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -544,47 +489,39 @@ footer {
 }
 
 .footer__container-A {
-  /* border: 3px solid #001aff; */
-
-  display: flex;
   height: 60%;
+  display: flex;
 }
 
 .B1 {
-
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #e7ebf0;
+  text-align: right;
   padding-right: 0.6rem;
-  width: 65%;
   font-size: 0.7rem;
   font-weight: 800;
-  text-align: right;
   border-right: 2px solid #e7ebf0;
+  color: #e7ebf0;
 }
 
 .footer__container-p{
-  /* border: 3px solid #00eeff; */
+  text-align: center;
   margin-bottom: 5px;
   margin-top: 20px;
-  text-align: center;
-  color: #e7ebf0;
   font-size: 0.8rem;
   font-weight: 800;
+  color: #e7ebf0;
 
 }
 
 .footer__container-B {
-  /* border: 3px solid #ff00d4; */
-
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  width: 35%;
-
 }
 
 .footer__container-B img {
@@ -592,15 +529,12 @@ footer {
 }
 
 .footer__container-p2{ 
-  /* border: 3px solid #ff00d4; */
-
-  display: flex;
-  align-self: center;
   position: absolute;
   top: 86%;
   left: 40%;
   width: fit-content;
-  /* margin-top: 40px; */
+  display: flex;
+  align-self: center;
   font-size: 0.7rem;
   color: #e7ebf0;
 }
